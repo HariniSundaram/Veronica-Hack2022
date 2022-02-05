@@ -1,10 +1,12 @@
 
 class Task(object):
-    def __init__(self, event, duration, weekly_recurrance, preferance_list, isFlexible, location): 
+    def __init__(self, event, duration, weekly_recurrance, preferance_list, isFlexible, location, start_time = None, end_time = None): 
         # string
         self.name = event 
         # time in minutes? Will figure out
         self.duration = duration
+        self.start_time = start_time
+        self.end_time = end_time
         self.weekly_recurrance = weekly_recurrance
         # list of day/time prefances...will figure out format...
         self.preferance_list = preferance_list
